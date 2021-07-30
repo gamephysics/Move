@@ -19,7 +19,7 @@ public class UnitMove : MonoBehaviour
     void Start()
     {
         //======================================
-        // PREPRE START 
+        // PREPARE START 
         //======================================
         index = 0;
         if (moveLine && moveLine.positionCount > index)
@@ -28,7 +28,7 @@ public class UnitMove : MonoBehaviour
         }
 
         //======================================
-        // PREPRE NEXT
+        // PREPARE NEXT
         //======================================
         ++index;
         if (moveLine && moveLine.positionCount > index)
@@ -68,16 +68,16 @@ public class UnitMove : MonoBehaviour
         //======================================
         // CHECK ARRIVED 
         //======================================
-        // DIRECTION from CURRENT POSITION to TARGE TPOSITION
+        // DIRECTION from CURRENT POSITION to TARGE POSITION
         var curdir  = Vector3.Normalize(targetPos - transform.position);
-        // CHECK ARRAIVED or PASSED
+        // CHECK ARRIVED or PASSED
         var dotdir  = Vector3.Dot(targetDir, curdir);
         if (dotdir <= 0)
         {
             transform.position = targetPos;
 
             //======================================
-            // PREPRE NEXT
+            // PREPARE NEXT
             //======================================
             ++index;
             if (moveLine && moveLine.positionCount > index)
