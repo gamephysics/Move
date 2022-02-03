@@ -8,7 +8,7 @@
 
 ## Youtube
 
-https://youtu.be/jfJWLOvZgDE
+[![Video Label](https://img.youtube.com/vi/jfJWLOvZgDE/0.jpg)](https://youtu.be/jfJWLOvZgDE)
 
 ## Compile
 
